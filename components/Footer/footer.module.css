@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--yl-avocado);
+  height: 100px;
+  margin-bottom: -100px;
+}
+
+.footer p {
+  text-align: center;
+  margin: 0;
+}
+
+.smIcons {
+  font-size: 1.3em;
+}
+
+.footer a {
+  color: black;
+}

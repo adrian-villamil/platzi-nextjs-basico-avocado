@@ -1,0 +1,13 @@
+:root {
+  --dg-avocado: rgb(74, 115, 55);
+  --lg-avocado: rgb(107, 140, 33);
+  --yl-avocado: rgb(221, 212, 143);
+  --bg-avocado: rgb(205, 169, 137);
+  --bn-avocado: rgb(112, 64, 18);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
