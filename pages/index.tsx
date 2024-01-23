@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Card } from "@/components/Card/Card";
 import { CardList } from "@/components/CardList/CardList";
 import { Title } from "@/components/Title/Title";
+import styles from './home.module.css';
 
 const Home = () => {
   const [productList, setProductList] = useState<TProduct[]>([]);
@@ -16,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       <Title />
       <CardList>
         {productList.map(product => (
