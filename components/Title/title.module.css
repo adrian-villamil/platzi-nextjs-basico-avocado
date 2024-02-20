@@ -2,7 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: cursive;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 4em;
   color: var(--dg-avocado);
+}
+
+@media screen and (width<=600px) {
+  .title {
+    font-size: 10vw;
+  }
 }

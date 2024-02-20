@@ -9,12 +9,20 @@ type Props = {
 export const Card = ({ product }: Props) => {
   return (
     <div className={styles.card}>
-      <Link className={styles.link} href={`/product/${product.id}`}>
-        <img src={product.image} alt={product.name} />
+      <Link
+        href={`/product/${product.id}`}
+        className={styles['card-link-image']}
+      >
+        <img src={product.image} alt={product.name} className={styles.image} />
       </Link>
-      <div className={styles.container}>
-        <Link href={`/product/${product.id}`}>{product.name}</Link>
-        <p>Price: ${product.price}</p>
+      <div className={styles['card-info']}>
+        <Link
+          href={`/product/${product.id}`}
+          className={styles['card-link-name']}
+        >
+          {product.name}
+        </Link>
+        <p className={styles['card-price']}>Price: ${product.price}</p>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ const ProductItem = () => {
           <img src={avocado?.image} alt={avocado?.name} />
         </div>
         <div className={styles.product_info}>
-          <h1>{avocado?.name}</h1>
+          <h1 className={styles.product_name}>{avocado?.name}</h1>
           <p className={styles.price}>$ {avocado?.price}</p>
           <p>SKU: {avocado?.sku}</p>
           <button
@@ -49,7 +49,7 @@ const ProductItem = () => {
       {/* TABLA DE DETALLES */}
       <div className={styles.product_details}>
         <h4>Details:</h4>
-        <ul>
+        <ul className={styles.product_list}>
           <li>Shape: {avocado?.attributes.shape}</li>
           <li>Hardiness: {avocado?.attributes.hardiness}</li>
           <li>Taste: {avocado?.attributes.taste}</li>

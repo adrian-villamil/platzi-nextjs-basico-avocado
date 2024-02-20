@@ -1,32 +1,49 @@
 .card {
+  width: 300px;
   display: inline-block;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  margin: 10px;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.link {
+.card-link-image {
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
 }
 
-.container {
-  padding: 2px 16px;
+.image {
+  width: 100%;
 }
 
-.container a {
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.card-link-name {
   display: inline-block;
   text-decoration: none;
-  margin: 5px 0;
+  text-wrap: balance;
   font-size: 1.3em;
   font-weight: 600;
-  color: black;
-  transition: 0.3s;
+  color: var(--dk-avocado);
 }
 
-.container a:hover {
+.card-link-name:hover {
   color: var(--bg-avocado);
+  text-decoration: underline;
+}
+
+.card-price {
+  margin: 0;
+}
+
+@media screen and (width<=320px) {
+  .card {
+    width: 100%;
+  }
 }
