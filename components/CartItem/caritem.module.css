@@ -1,24 +1,32 @@
 .product_container {
   position: relative;
   display: flex;
+  align-items: center;
+  padding: 40px 20px;
   border: 1px solid rgb(200, 200, 200);
-  margin: 0px 0px 10px 0px;
 }
 
 .product_container>div {
   flex: 1;
-  padding: 6px;
 }
 
-.product_image img {
+.product_image>img {
   width: 150px;
 }
 
 .product_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   overflow: hidden;
 }
 
-.product_info p {
+.product_info>h3,
+.product_info>p {
+  margin: 0;
+}
+
+.product_info>p {
   font-size: 0.8em;
 }
 
@@ -76,4 +84,31 @@
 
 .remove_button:hover {
   color: rgb(243, 85, 85);
+}
+
+@media screen and (width<=750px) {
+  .product_container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .product_image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product_image>img {
+    width: 200px;
+  }
+
+  .product_info>h3,
+  .product_info>p {
+    text-align: center;
+  }
+}
+
+@media screen and (width<=320px) {
+  .product_image>img {
+    width: 100%;
+  }
 }

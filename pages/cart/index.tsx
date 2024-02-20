@@ -38,15 +38,15 @@ const Cart = () => {
           </div>
         </div>
         <div className={styles.cart_aside}>
-          <div className={styles.cart_info}>
+          <div className={styles.cart_quantity_container}>
             <h3>Cart</h3>
-            <div className={styles.row}>
+            <div className={styles.cart_info}>
               <div className={`${styles.column} ${styles.column_labels}`}>
                 <span>Items ({getTotal().totalQuantity})</span>
-                <span>Shipping</span>
+                <span>$ {getTotal().totalPrice.toFixed(2)}</span>
               </div>
               <div className={`${styles.column} ${styles.column_values}`}>
-                <span>${getTotal().totalPrice.toFixed(2)}</span>
+                <span>Shipping</span>
                 <span>Free</span>
               </div>
             </div>
